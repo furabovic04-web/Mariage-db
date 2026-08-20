@@ -1,0 +1,51 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Image de fond avec voile sombre pour garder le texte lisible */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px); /* Effet moderne dépoli */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.header { margin-bottom: 24px; }
+.logo { width: 90px; height: 90px; object-fit: cover; border-radius: 50%; margin-bottom: 12px; border: 3px solid #e91e63; }
+h2 { color: #2c3e50; font-size: 1.4rem; margin-bottom: 4px; }
+.subtitle { color: #7f8c8d; font-size: 0.9rem; }
+
+.form-group { text-align: left; margin-bottom: 20px; }
+label { display: block; font-size: 0.85rem; font-weight: 600; color: #34495e; margin-bottom: 6px; }
+input { width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 1rem; outline: none; }
+input:focus { border-color: #e91e63; }
+
+button { width: 100%; padding: 12px; margin-top: 12px; border-radius: 8px; border: none; background-color: #e91e63; color: white; font-size: 1rem; font-weight: 600; cursor: pointer; }
+button:hover { background-color: #c2185b; }
+
+.result-container { margin-top: 20px; text-align: left; border-top: 1px solid #edf2f7; padding-top: 16px; }
+.guest-info-card { background: #f8fafc; border-radius: 8px; padding: 14px; margin-bottom: 12px; border: 1px solid #e2e8f0; }
+.guest-info-card p { margin-bottom: 6px; color: #334155; font-size: 0.95rem; }
+
+.status-badge { display: inline-block; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; margin-top: 8px; width: 100%; text-align: center; }
+.status-ok { background-color: #dcfce7; color: #15803d; }
+.status-used { background-color: #fee2e2; color: #b91c1c; }
+.btn-validate { background-color: #10b981; }
+.btn-validate:hover { background-color: #059669; }
