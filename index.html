@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage Josué & Esther - Vérification Invités</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.1"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h2>Mariage Josué & Esther</h2>
+      <p class="subtitle">Système de Vérification des Invités</p>
+    </div>
+    <div class="form-group">
+      <label for="guestId">Code / ID de l'invité</label>
+      <input type="text" id="guestId" placeholder="Entrez ou scannez le code...">
+      <button onclick="verifierInvite()" id="btnCheck">Vérifier L'invité</button>
+    </div>
+    <div id="result" class="result-container"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
